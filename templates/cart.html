@@ -1,0 +1,252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'cart.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="cover">
+        <span class="brand"><img src="{% static 'images/LOGO.jpeg' %}"></span>
+    
+        <nav class="navbar">
+          <div class="nav-top">
+            
+            <div class="nav-icons">
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              
+              <a href="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="/profile"><i class="fa-solid fa-user"></i></a>
+              
+            </div>
+          </div>
+    
+          <div class="nav-links">
+            <a href="#">New Drops</a>
+            <a href="/chains">Chains</a>
+            <a href="#">Rings</a>
+            <a href="#">Pendants</a>
+            <a href="#">Watches</a>
+            <a href="#">Necklace</a>
+            <a href="#">Watches</a>
+            <a href="#">Earings</a>
+            <a href="#">Bracelets</a>
+            <a href="#">Customs</a>
+            <a href="#">All Jewelry</a>
+          </div>
+        </nav>
+    </div>
+    <div class="cover2">
+        <div class="container">
+            <h2>Shopping Cart (4 items)</h2>
+            <div class="item">
+                <img src="earring1.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>Cate & Chloe Bianca 18k White Gold Drop Dangle Hoop Earrings</h4>
+                    <p>Color: White Gold</p>
+                    <p class="price">$16.99 <span class="original-price">$200.00</span> <span class="save">You save $98.01</span></p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="earring2.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>SDJMa Diamond Hoop Golden Earrings</h4>
+                    <p>Color: Silver</p>
+                    <p class="price">$0.49</p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="earring2.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>SDJMa Diamond Hoop Golden Earrings</h4>
+                    <p>Color: Silver</p>
+                    <p class="price">$0.49</p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="earring1.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>Cate & Chloe Bianca 18k White Gold Drop Dangle Hoop Earrings</h4>
+                    <p>Color: White Gold</p>
+                    <p class="price">$16.99 <span class="original-price">$115.00</span> <span class="save">You save $98.01</span></p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="earring2.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>SDJMa Diamond Hoop Golden Earrings</h4>
+                    <p>Color: Silver</p>
+                    <p class="price">$0.49</p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="earring2.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>SDJMa Diamond Hoop Golden Earrings</h4>
+                    <p>Color: Silver</p>
+                    <p class="price">$0.49</p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="earring2.jpg" alt="Earrings">
+                <div class="item-details">
+                    <h4>SDJMa Diamond Hoop Golden Earrings</h4>
+                    <p>Color: Silver</p>
+                    <p class="price">$0.49</p>
+                </div>
+                <div class="item-actions">
+                    <div class="buttons">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="summary">
+            <a href="#" class="checkout-btn">Continue to checkout</a>
+            <div class="info-box">Items in your cart have reduced prices. Check out now for extra savings!</div>
+            
+            <hr> <!-- Divider Line -->
+            
+            <p><strong>Subtotal (2 items)</strong> <span class="original-price">$115.49</span></p>
+            <p><strong>Savings</strong> <span class="price">- $98.01</span></p>
+            
+            <hr> <!-- Divider Line -->
+            
+            <p><strong>Total</strong> <span class="price">$17.48</span></p>
+            <p>Shipping (below $35 order minimum): $6.99</p>
+            <p>Seller shipping: $4.46</p>
+            <p><strong>Taxes</strong>: Calculated at checkout</p>
+            
+            <div class="total-section">
+                <p><strong>Estimated total</strong> <span class="price">$28.93</span></p>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="carousel-container">
+        <h2 class="carousel-title">Recommended with your order</h2>
+        <button class="nav-button prev" onclick="scrollLeft()">&#10094;</button>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="item-box">
+                    <img src="bracelet.jpg" alt="Bracelet">
+                    <p class="price">Now $3.38 <span class="old-price">$6.59</span></p>
+                    <p>Classic Diamond Tennis Bracelet</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+                <div class="item-box">
+                    <img src="ring.jpg" alt="Ring">
+                    <p class="price">Now $2.39 <span class="old-price">$8.01</span></p>
+                    <p>Copper Ring Colorful Zircon</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+                <div class="item-box">
+                    <img src="earrings1.jpg" alt="Earrings">
+                    <p class="price">$3.77</p>
+                    <p>Women's Exaggerated Earrings</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+                <div class="item-box">
+                    <img src="ring2.jpg" alt="Diamond Ring">
+                    <p class="price">Now $5.46 <span class="old-price">$6.79</span></p>
+                    <p>925 Sterling Silver Two Tone Diamond Ring</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+                <div class="item-box">
+                    <img src="earrings2.jpg" alt="Lowprofile Earrings">
+                    <p class="price">$6.10</p>
+                    <p>Lowprofile Stud Earrings</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+                <div class="item-box">
+                    <img src="necklace.jpg" alt="Necklace">
+                    <p class="price">Now $4.99 <span class="old-price">$10.00</span></p>
+                    <p>Gold Plated Heart Necklace</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+                <div class="item-box">
+                    <img src="watch.jpg" alt="Watch">
+                    <p class="price">Now $12.99 <span class="old-price">$25.00</span></p>
+                    <p>Luxury Women's Gold Watch</p>
+                    <a href="#" class="add-btn">+ Add</a>
+                </div>
+            </div>
+        </div>
+        <button class="nav-button next" onclick="scrollRight()">&#10095;</button>
+    </div>  
+    
+    <script>
+        function scrollLeft() {
+            document.querySelector(".carousel-wrapper").scrollBy({ left: -300, behavior: "smooth" });
+        }
+    
+        function scrollRight() {
+            document.querySelector(".carousel-wrapper").scrollBy({ left: 300, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>

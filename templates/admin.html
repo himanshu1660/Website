@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007bff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Product</h2>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="itemNumber">Item Number:</label>
+            <input type="text" id="itemNumber" name="itemNumber" required>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label>Category:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="category[]" value="rings"> Rings</label>
+                <label><input type="checkbox" name="category[]" value="necklaces"> Necklaces</label>
+                <label><input type="checkbox" name="category[]" value="bracelets"> Bracelets</label>
+                <label><input type="checkbox" name="category[]" value="earrings"> Earrings</label>
+            </div>
+
+            <label for="metal">Metal:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="metal[]" value="silver"> Silver</label>
+                <label><input type="checkbox" name="metal[]" value="gold_10k"> Gold (10k)</label>
+                <label><input type="checkbox" name="metal[]" value="gold_14k"> Gold (14k)</label>
+                <label><input type="checkbox" name="metal[]" value="gold_18k"> Gold (18k)</label>
+            </div>
+
+            <label for="stones">Stones:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="stones[]" value="moissanite"> Moissanite</label>
+                <label><input type="checkbox" name="stones[]" value="lab_grown_diamonds"> Lab Grown Diamonds</label>
+                <label><input type="checkbox" name="stones[]" value="natural_diamonds_si"> Natural Diamonds (SI)</label>
+                <label><input type="checkbox" name="stones[]" value="natural_diamonds_vs"> Natural Diamonds (VS)</label>
+                <label><input type="checkbox" name="stones[]" value="natural_diamonds_vvs"> Natural Diamonds (VVS)</label>
+            </div>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <option value="L1">L1</option>
+                <option value="L2">L2</option>
+                <option value="L3">L3</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+</body>
+</html>

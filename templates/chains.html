@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'chains.css' %}" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cover">
+        <span class="brand"><img src="{% static 'images/LOGO.jpeg' %}"></span>
+    
+        <nav class="navbar">
+          <div class="nav-top">
+            
+            <div class="nav-icons">
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              
+              <a href="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="/profile"><i class="fa-solid fa-user"></i></a>
+              
+            </div>
+          </div>
+    
+          <div class="nav-links">
+            <a href="#">New Drops</a>
+            <a href="/chains">Chains</a>
+            <a href="#">Rings</a>
+            <a href="#">Pendants</a>
+            <a href="#">Watches</a>
+            <a href="#">Necklace</a>
+            <a href="#">Watches</a>
+            <a href="#">Earings</a>
+            <a href="#">Bracelets</a>
+            <a href="#">Customs</a>
+            <a href="#">All Jewelry</a>
+          </div>
+        </nav>
+    </div>
+
+    <div class="top-bar">
+        <h1 class="title">Chains <span class="count">(225)</span></h1>
+        
+        <div class="filter-buttons">
+            <button class="active">Men</button>
+            <button>Women</button>
+        </div>
+
+        <div class="filter-options">
+            <span class="clear-filters">Clear filters</span>
+            <span class="hide-filters">Hide filters</span>
+
+            <div class="sort-dropdown">
+                <label for="sort">Sort by</label>
+                <select id="sort">
+                    <option>Featured</option>
+                    <option>New drops</option>
+                    <option>Bestsellers</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar for Filters -->
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Color</h3>
+                <label><input type="checkbox"> White</label>
+                <label><input type="checkbox"> Yellow</label>
+                <label><input type="checkbox"> Rose</label>
+                <label><input type="checkbox"> Rose/White</label>
+            </div>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <input type="text" placeholder="$0"> to <input type="text" placeholder="$519.00">
+            </div>
+            <div class="filter-group">
+                <h3>Product Style</h3>
+                <label><input type="checkbox"> Cuban</label>
+                <label><input type="checkbox"> Tennis</label>
+                <label><input type="checkbox"> Rope</label>
+                <label><input type="checkbox"> Figaro</label>
+                <label><input type="checkbox"> Franco</label>
+                <label><input type="checkbox"> Palm</label>
+                <label><input type="checkbox"> Herringbone</label>
+                <label><input type="checkbox"> GLD Exclusive</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main class="product-grid">
+            <!-- 40 Product Cards -->
+            <!-- Row 1 -->
+            <div class="product-card"><img src="chain1.jpg" alt="Chain"><h3>Rope Chain - 4mm</h3><p>From $119</p></div>
+            <div class="product-card"><img src="chain2.jpg" alt="Chain"><h3>Cuban Link - 5mm</h3><p>From $129</p></div>
+            <div class="product-card"><img src="chain3.jpg" alt="Chain"><h3>Rope Chain - 4mm</h3><p>From $119</p></div>
+            <div class="product-card"><img src="chain4.jpg" alt="Chain"><h3>Micro Cuban - 3mm</h3><p>From $109</p></div>
+
+            <!-- Row 2 -->
+            <div class="product-card"><img src="chain5.jpg" alt="Chain"><h3>Tennis Necklace</h3><p>From $109</p></div>
+            <div class="product-card"><img src="chain6.jpg" alt="Chain"><h3>Rope Chain - 2mm</h3><p>From $99</p></div>
+            <div class="product-card"><img src="chain7.jpg" alt="Chain"><h3>Diamond Cuban - 8.5mm</h3><p>From $259</p></div>
+            <div class="product-card"><img src="chain8.jpg" alt="Chain"><h3>Micro Cuban - 3mm</h3><p>From $109</p></div>
+
+            <!-- Row 3 to 10 (32 more products) -->
+            <!-- Duplicating structure for a total of 40 products -->
+            <div class="product-card"><img src="chain9.jpg" alt="Chain"><h3>Gold Rope - 6mm</h3><p>From $139</p></div>
+            <div class="product-card"><img src="chain10.jpg" alt="Chain"><h3>Silver Figaro - 5mm</h3><p>From $99</p></div>
+            <div class="product-card"><img src="chain11.jpg" alt="Chain"><h3>White Gold Franco - 4mm</h3><p>From $129</p></div>
+            <div class="product-card"><img src="chain12.jpg" alt="Chain"><h3>Rose Gold Cuban - 6mm</h3><p>From $149</p></div>
+
+            <div class="product-card"><img src="chain13.jpg" alt="Chain"><h3>Diamond Tennis - 3mm</h3><p>From $399</p></div>
+            <div class="product-card"><img src="chain14.jpg" alt="Chain"><h3>Palm Chain - 7mm</h3><p>From $179</p></div>
+            <div class="product-card"><img src="chain15.jpg" alt="Chain"><h3>Herringbone Chain</h3><p>From $159</p></div>
+            <div class="product-card"><img src="chain16.jpg" alt="Chain"><h3>Gold Rope - 3mm</h3><p>From $119</p></div>
+
+            <!-- Add remaining product cards up to 40 -->
+            <div class="product-card"><img src="chain17.jpg" alt="Chain"><h3>Silver Rope - 5mm</h3><p>From $139</p></div>
+            <div class="product-card"><img src="chain18.jpg" alt="Chain"><h3>Black Cuban - 6mm</h3><p>From $159</p></div>
+            <div class="product-card"><img src="chain19.jpg" alt="Chain"><h3>White Gold Figaro</h3><p>From $109</p></div>
+            <div class="product-card"><img src="chain20.jpg" alt="Chain"><h3>Gold Franco - 5mm</h3><p>From $149</p></div>
+
+            <!-- Keep adding until 40 total -->
+        </main>
+    </div>
+</body>
+</html>
+
