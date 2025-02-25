@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'chains.css' %}" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+        <link rel="icon" href="images/redWhiteYinYang.png" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+          type="image/png"
+          sizes="32x32"
+          rel="icon"
+          href="../images/icons8-galaxy-store-32.png"
+        />
+</head>
+<body>
+    <div class="top-bar">
+        <h1 class="title">Earrings <span class="count">(225)</span></h1>
+        
+        <div class="filter-buttons">
+            <button class="active">Dangle</button>
+            <button>Stud</button>
+            <button>Loop</button>
+            <button>Cluster</button>
+            <button>Drop</button>
+            <button>Jhumko</button>
+            <button>Chandelier</button>
+            <button>Tussel</button>
+        </div>
+
+        <div class="filter-options">
+            <span class="clear-filters">Clear filters</span>
+            <span class="hide-filters">Hide filters</span>
+
+            <div class="sort-dropdown">
+                <label for="sort">Sort by</label>
+                <select id="sort">
+                    <option>Featured</option>
+                    <option>New drops</option>
+                    <option>Bestsellers</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar for Filters -->
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Stones</h3>
+                <label><input type="checkbox"> Diamond</label>
+                <label><input type="checkbox"> Emerald</label>
+                <label><input type="checkbox"> Amethyst</label>
+                <label><input type="checkbox"> Pearl</label>
+            </div>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <input type="text" placeholder="$0"> to <input type="text" placeholder="$519.00">
+            </div>
+            <div class="filter-group">
+                <h3>Product Style</h3>
+                <label><input type="checkbox"> Stud</label>
+                <label><input type="checkbox"> Loop</label>
+                <label><input type="checkbox"> Cluster</label>
+                <label><input type="checkbox"> Drop</label>
+                <label><input type="checkbox"> Jhumko</label>
+                <label><input type="checkbox"> Chandelier</label>
+                <label><input type="checkbox"> Tassel</label>
+                <label><input type="checkbox"> Dangle</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main class="product-grid">
+            <!-- 40 Product Cards -->
+            <!-- Row 1 -->
+           
+            <div class="product-card"><img src="chain9.jpg" alt="Earrings"><h3>Emerald Earring</h3><p>From $139</p></div>
+            <div class="product-card"><img src="Earrings.jpg" alt="Earrings"><h3>Pearl earring</h3><p>From $99</p></div>
+            <div class="product-card"><img src="Earrings.jpg" alt="Earrings"><h3>earring</h3><p>From $129</p></div>
+            <div class="product-card"><img src="Earrings.jpg" alt="Earrings"><h3>earring</h3><p>From $149</p></div>
+
+            <div class="product-card"><img src="Earrings.jpg" alt="Earrings"><h3>Diamond Tennis - 3mm</h3><p>From $399</p></div>
+            <div class="product-card"><img src="Earring14.jpg" alt="Earrings"><h3>Palm Earring - 7mm</h3><p>From $179</p></div>
+            <div class="product-card"><img src="Earring15.jpg" alt="Earrings"><h3>Herringbone Earring</h3><p>From $159</p></div>
+            <div class="product-card"><img src="Earring16.jpg" alt="Earrings"><h3>Gold Rope - 3mm</h3><p>From $119</p></div>
+
+            <!-- Add remaining product cards up to 40 -->
+            <div class="product-card"><img src="Earring17.jpg" alt="Earrings"><h3>Silver Rope - 5mm</h3><p>From $139</p></div>
+            <div class="product-card"><img src="Earring18.jpg" alt="Earrings"><h3>Black Cuban - 6mm</h3><p>From $159</p></div>
+            <div class="product-card"><img src="Earring19.jpg" alt="Earrings"><h3>White Gold Figaro</h3><p>From $109</p></div>
+            <div class="product-card"><img src="chain20.jpg" alt="Earrings"><h3>Gold Franco - 5mm</h3><p>From $149</p></div>
+
+            <!-- Keep adding until 40 total -->
+        </main>
+    </div>
+</body>
+</html>

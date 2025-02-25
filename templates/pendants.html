@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'pendants.css' %}" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <link rel="icon" href="{% static 'images/redWhiteYinYang.png' %}" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+        type="image/png"
+        sizes="32x32"
+        rel="icon"
+        href="{% static 'images/icons8-galaxy-store-32.png' %}"
+    />
+    <title>Pendants Collection</title>
+</head>
+<body>
+    <div class="top-bar">
+        <h1 class="title">Pendants <span class="count">(150)</span></h1>
+        
+        <div class="filter-buttons">
+            <button class="active">Crosses</button>
+            <button>Coins</button>
+            <button>Zodiac</button>
+            <button>Spiritual</button>
+            <button>MInimalistic</button>
+            <button>Custom</button>
+            <button>Other</button>
+        </div>
+
+        <div class="filter-options">
+            <span class="clear-filters">Clear filters</span>
+            <span class="hide-filters">Hide filters</span>
+
+            <div class="sort-dropdown">
+                <label for="sort">Sort by</label>
+                <select id="sort">
+                    <option>Featured</option>
+                    <option>New arrivals</option>
+                    <option>Bestsellers</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar for Filters -->
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Metal</h3>
+                <label><input type="checkbox"> White Gold</label>
+                <label><input type="checkbox"> Yellow Gold</label>
+                <label><input type="checkbox"> Rose Gold</label>
+                <label><input type="checkbox"> Platinum</label>
+            </div>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <input type="text" placeholder="$0"> to <input type="text" placeholder="$1000.00">
+            </div>
+            <div class="filter-group">
+                <h3>Style</h3>
+                <label><input type="checkbox"> Crosses</label>
+                <label><input type="checkbox"> Coins</label>
+                <label><input type="checkbox"> Zodiac</label>
+                <label><input type="checkbox"> Spiritual</label>
+                <label><input type="checkbox"> Minimalistic</label>
+                <label><input type="checkbox"> Customs</label>
+                <label><input type="checkbox"> Others</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main class="product-grid">
+            <!-- Product Cards -->
+            <div class="product-card"><img src="{% static 'images/ring1.jpg' %}" alt="Pendant"><h3>Heart-Shaped Diamond Pendant</h3><p>From $500</p></div>
+            <div class="product-card"><img src="{% static 'images/ring2.jpg' %}" alt="Pendant"><h3>Feather Pendant</h3><p>From $200</p></div>
+            <div class="product-card"><img src="{% static 'images/ring3.jpg' %}" alt="Pendant"><h3>Initial Pendant</h3><p>From $150</p></div>
+            <div class="product-card"><img src="{% static 'images/ring4.jpg' %}" alt="Pendant"><h3>Cross Pendant</h3><p>From $700</p></div>
+            <div class="product-card"><img src="{% static 'images/ring5.jpg' %}" alt="Pendant"><h3>Pendant</h3><p>From $250</p></div>
+            <div class="product-card"><img src="{% static 'images/ring6.jpg' %}" alt="Pendant"><h3>Pendant</h3><p>From $300</p></div>
+            <div class="product-card"><img src="{% static 'images/ring7.jpg' %}" alt="Pendant"><h3>Pendant</h3><p>From $800</p></div>
+            <!-- Add more product cards as needed -->
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'chains.css' %}" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+        <link rel="icon" href="images/redWhiteYinYang.png" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+          type="image/png"
+          sizes="32x32"
+          rel="icon"
+          href="../images/icons8-galaxy-store-32.png"
+        />
+</head>
+<body>
+    <div class="top-bar">
+        <h1 class="title">All Products <span class="count">(225)</span></h1>
+        
+        <div class="filter-buttons">
+            <button class="active">Chains</button>
+            <button>Rings</button>
+            <button>Pendants</button>
+            <button>Customs</button>
+            <button>Earrings</button>
+            <button>Bracelets</button>
+            <button>Watches</button>
+        </div>
+
+        <div class="filter-options">
+            <span class="clear-filters">Clear filters</span>
+            <span class="hide-filters">Hide filters</span>
+
+            <div class="sort-dropdown">
+                <label for="sort">Sort by</label>
+                <select id="sort">
+                    <option>Featured</option>
+                    <option>New drops</option>
+                    <option>Bestsellers</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar for Filters -->
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Metal</h3>
+                <label><input type="checkbox"> Gold</label>
+                <label><input type="checkbox"> Rose Gold</label>
+                <label><input type="checkbox"> Silver</label>
+                <label><input type="checkbox"> Stainless Steel</label>
+            </div>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <input type="text" placeholder="$0"> to <input type="text" placeholder="$519.00">
+            </div>
+            <div class="filter-group">
+                <h3>Product Style</h3>
+                <label><input type="checkbox"> Chains</label>
+                <label><input type="checkbox"> Rings</label>
+                <label><input type="checkbox"> Pendants</label>
+                <label><input type="checkbox"> Customs</label>
+                <label><input type="checkbox"> Bracelets</label>
+                <label><input type="checkbox"> Earrings</label>
+                <label><input type="checkbox"> Watches</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main class="product-grid">
+            <!-- 40 Product Cards -->
+            <!-- Row 1 -->
+           
+            <div class="product-card"><img src="chain9.jpg" alt="All"><h3>p1</h3><p>From $139</p></div>
+            <div class="product-card"><img src="All.jpg" alt="All"><h3>p2</h3><p>From $99</p></div>
+            <div class="product-card"><img src="All.jpg" alt="All"><h3>p3</h3><p>From $129</p></div>
+            <div class="product-card"><img src="All.jpg" alt="All"><h3>ep4</h3><p>From $149</p></div>
+
+            <div class="product-card"><img src="All.jpg" alt="All"><h3>p5</h3><p>From $399</p></div>
+            <div class="product-card"><img src="Earring14.jpg" alt="All"><h3>p6</h3><p>From $179</p></div>
+            <div class="product-card"><img src="Earring15.jpg" alt="All"><h3>p7</h3><p>From $159</p></div>
+            <div class="product-card"><img src="Earring16.jpg" alt="All"><h3>p8</h3><p>From $119</p></div>
+
+            <!-- Add remaining product cards up to 40 -->
+            <div class="product-card"><img src="Earring17.jpg" alt="All"><h3>p9</h3><p>From $139</p></div>
+            <div class="product-card"><img src="Earring18.jpg" alt="All"><h3>p10</h3><p>From $159</p></div>
+            <div class="product-card"><img src="Earring19.jpg" alt="All"><h3>p11</h3><p>From $109</p></div>
+            <div class="product-card"><img src="chain20.jpg" alt="All"><h3>p12</h3><p>From $149</p></div>
+
+            <!-- Keep adding until 40 total -->
+        </main>
+    </div>
+</body>
+</html>
